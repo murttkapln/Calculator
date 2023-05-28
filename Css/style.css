@@ -1,0 +1,114 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container { 
+    width: 500px;
+    height: 840px;
+    padding: 20px;
+    border-radius: 50px;
+    background: black;
+    color: white;
+    /* margin: 50% auto; */
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    & .icon {
+        position: absolute;
+        top: 1rem;
+        right: 2.5rem;
+        padding: 2px; 
+        & #wifi {
+            margin-right: 5px;
+        }
+        }
+
+    & .display{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 250px;
+        text-align: right;
+        padding: 20px;
+        font-size: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    & .calculator{
+        /* border: 2px solid green; */
+        width: 440px;
+        height: 540px;
+        
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 10px;
+    }
+}
+
+.btn {
+    /* width: 100px; */
+    /* height: 100px; */
+    border-radius: 50%;
+    background-color: rgb(51, 51, 51);
+    font-size: 45px;
+    transition: filter .3s ease 0s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        opacity: .5;
+        cursor: pointer;
+    }
+
+    }
+
+}
+
+.c1, .c2, .c3 {
+    background-color: #A5A5A5;
+    color: black;
+}
+.c4, .c8, .c12, .c16 {
+    background: #F1A33C;
+}
+@media screen and (max-width:580px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .calculator {
+        width: 350px;
+        /* height: 500px; */
+        margin: 0 auto;
+    }
+   
+}
+.c17 {
+    grid-column: 1 / span 2;
+    border-radius: 35px;
+    /* width: 200px; */
+}
