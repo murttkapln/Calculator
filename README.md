@@ -8,7 +8,7 @@
 
 ## Expected Outcome
 
-![CSS-GRID IOS CALCULATOR](./image)
+![CSS-GRID IOS CALCULATOR](./image/css-grid-ios.png)
 
 ### At the end of the project, following topics are to be covered;
 
